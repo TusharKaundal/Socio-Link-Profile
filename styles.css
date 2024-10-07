@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+    /* margin: 0; */
+}
+
+body,
+html {
+    margin: 0;
+    height: 100vh;
+}
+
+section {
+    height: 100%;
+    background: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.card img {
+    border-radius: 50%;
+    height: 5.5rem;
+}
