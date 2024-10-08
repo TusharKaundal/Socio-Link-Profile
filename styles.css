@@ -1,33 +1,75 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --gray-900: hsl(0, 0%, 8%);
+    --gray-800: hsl(0, 0%, 12%);
+    --gray-700: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* text-preset */
+
 * {
     box-sizing: border-box;
     font-family: "Inter", system-ui;
-    /* margin: 0; */
+    margin: 0;
+    color: var(--white);
 }
 
-body,
-html {
-    margin: 0;
-    height: 100vh;
+body {
+    min-height: 100vh;
+    background: var(--gray-900);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     height: 100%;
-    background: #141414;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #1F1F1F;
+    background-color: var(--gray-800);
     align-items: center;
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 3rem;
+    border-radius: 12px;
+    gap: 24px;
 }
 
-.card img {
+.profile-pic {
     border-radius: 50%;
     height: 5.5rem;
+}
+
+.card-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.card-tabs button {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--gray-700);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--green);
+    text-decoration: none;
 }
