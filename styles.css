@@ -8,6 +8,27 @@
 
 /* text-preset */
 
+.text-preset-1 {
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.text-preset-2 {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.text-preset-2-bold {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Inter", system-ui;
@@ -22,10 +43,11 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 section {
-    height: 100%;
+    min-height: 100%;
 }
 
 .card {
@@ -33,14 +55,26 @@ section {
     flex-direction: column;
     background-color: var(--gray-800);
     align-items: center;
-    padding: 3rem;
+    padding: 24px;
     border-radius: 12px;
     gap: 24px;
+    text-align: center;
 }
 
 .profile-pic {
     border-radius: 50%;
     height: 5.5rem;
+    object-fit: cover;
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.name-location p {
+    color: var(--green);
 }
 
 .card-tabs {
@@ -57,11 +91,14 @@ section {
     padding: 12px;
     border-radius: 8px;
     background-color: var(--gray-700);
+    transition: all 0.3s ease-in-out;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
+.card-tabs button:hover {
+    background-color: var(--green);
+    color: var(--gray-900);
+    cursor: pointer;
+    caret-color: var(--gray-900);
 }
 
 .attribution {
@@ -72,4 +109,17 @@ footer {
 .attribution a {
     color: var(--green);
     text-decoration: none;
+}
+
+@media screen and (min-width : 768px) {
+    .card {
+        padding: 40px;
+        width: 28rem;
+    }
+}
+
+@media screen and (min-width : 1440px) {
+    .card {
+        width: 24rem;
+    }
 }
