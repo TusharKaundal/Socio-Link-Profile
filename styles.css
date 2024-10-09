@@ -82,12 +82,11 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
-
 }
 
 .card-tabs li {
     width: 100%;
-    height: 3rem;
+    min-height: 3rem;
     border: none;
     padding: 12px;
     border-radius: 8px;
@@ -106,6 +105,7 @@ body {
 
 .card-tabs a {
     text-decoration: none;
+
 }
 
 .card-tabs li:hover a {
