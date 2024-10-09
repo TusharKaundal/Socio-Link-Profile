@@ -85,33 +85,28 @@ body {
 }
 
 .card-tabs li {
-    width: 100%;
-    min-height: 3rem;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    background-color: var(--gray-700);
-    transition: all 0.3s ease;
     list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
-.card-tabs li:hover {
+.card-tabs li a {
+    display: block;
+    width: 100%;
+    min-height: 3rem;
+    padding: 12px;
+    background-color: var(--gray-700);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.card-tabs li a:hover {
     background-color: var(--green);
     color: var(--gray-900);
     cursor: pointer;
     caret-color: var(--gray-900);
     text-decoration: none;
 }
-
-.card-tabs a {
-    text-decoration: none;
-
-}
-
-.card-tabs li:hover a {
-    color: var(--gray-900);
-}
-
 
 .attribution {
     font-size: 11px;
@@ -122,13 +117,11 @@ body {
     color: var(--green);
 }
 
-li:focus-within {
-    background-color: var(--green);
-}
 
 li a:focus-visible {
     outline: none;
     color: var(--gray-900);
+    background-color: var(--green);
 }
 
 footer a:focus-visible {
