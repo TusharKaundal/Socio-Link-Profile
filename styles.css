@@ -50,7 +50,7 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 24rem;
+    max-width: 28rem;
     background-color: var(--gray-800);
     align-items: center;
     padding: clamp(24px, 40px, 5vw);
